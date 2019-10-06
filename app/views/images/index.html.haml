@@ -1,0 +1,17 @@
+#image-box-1
+  %ul.item-images.active
+  .item-num-0#image-box__container
+    %label
+      %input{multiple:"multiple", name:"item[images_attributes][][image]", type:"file", value:"",style:"display: none;", id:"images"}
+      %p ドラッグアンドドロップ またはクリックしてファイルをアップロード
+
+  - @images.each do |image|
+    = image_tag "#{image}"
+
+
+
+
+
+
+
+
